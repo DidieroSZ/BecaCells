@@ -3,11 +3,46 @@
 "use strict"; //Evita asignacion de cosas.
 
 
+// CONGELAR OBJETOS
 Object.freeze(objeto); //Congela un objeto, evita ser leido.
-
-
 Object.isFreeze(objeto); Retorna bool si está congelado.
 
 
 
+// COPIAR OBJETOS
+ conts re = Object.assign(producto, medidas);
 
+// SPREAD OPERATOR
+const res2 = { ...objeto, ...medidas }; // ... copia los objetos
+
+
+// THIS y OBJECT LITERAL
+variables dentro del objeto
+
+const prod = {
+	nombre: 'Producto',
+	precio: 20,
+	mostrar(): function(){
+		console.log(`${this.nombre}`)
+	}
+}
+
+
+// OBJECT CONTRUCTOR
+function Producto(nombre, precio){
+	this.nombre = nombre;
+	this.precio = precio;
+	this.disponible = true;
+}
+const producto = new Producto('Tablet', 500);
+console.log(producto);
+
+
+// KEYS
+Object.keys(objeto); // Retorna llaves
+
+// VALUES
+Object.values(objeto); // Retorna valures
+
+// PARES
+Object.entries(objeto); // Retorna todo en pares
