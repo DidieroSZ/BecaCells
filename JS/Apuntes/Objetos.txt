@@ -1,0 +1,13 @@
+// OBJETOS
+
+"use strict"; //Evita asignacion de cosas.
+
+
+Object.freeze(objeto); //Congela un objeto, evita ser leido.
+
+
+Object.isFreeze(objeto); Retorna bool si está congelado.
+
+
+
+

@@ -1,0 +1,38 @@
+Metodos Strings:
+
+variable.indexOf('Hola'); // Busca el primer caracter y retorna la posicion.
+
+variable.includes('Pepe'); //Retorna true o false, sensible a las mayusculas.
+
+//LIMPIAR CADENAS:
+variable.trimStart(); //Limpiar espacios en blanco Principio
+
+variable.trimEnd(); //Limpiar espacios en blanco al final
+
+variable.trim(); //Ambas direcciones
+
+
+//REMPLAZAR
+variable.replace('algo', 'por esto');
+
+//CORTAR
+variable.slice(0, 10); //(Inicio, Final)
+variable.slice(3); //(Inicio, Final Automatio)
+
+variable.substring(0, 10); //(Inicio, Final)
+
+variable.charAt(0); //Obtiene un caracter especifico en la posicion indicada.
+
+
+//REPETIR COSAS
+'Repetir'.repeat(2);
+
+//DIVIDIR
+variable.split(' '); //Retorna un array 
+
+//MANIPULAR
+variable.toUpperCase();
+variable.toLowerCase();
+variable.toString();
+
+

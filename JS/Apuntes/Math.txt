@@ -1,0 +1,19 @@
+// OBJETO MATH
+
+Math.ceil(2.9) //Redondea hacia arriba
+Math.floor(2.9) //Redondea hacia abajo
+
+Math.sqrt(144) //Raiz cuadrada
+
+Math.abs(-500); Valor absoluto prinnt = 500
+
+Math.pow(2, 2); Potencia
+
+Math.min(3,7,2,89); Mínimo de loas números
+
+Math.max(3,7,2,89); Mínimo de loas números
+
+Math.random(); Numeros randoms
+
+Math.floor(Math.random() * 30) //Aleatoriao entro 1 y 30
+
