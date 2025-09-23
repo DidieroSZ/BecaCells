@@ -1,0 +1,10 @@
+Requisitos para instalar Open Cells
+
+NOde JS:
+node -v
+npm -v
+
+Iniciar npm
+npm init -y
+
+Instalar OpenCells:
