@@ -12,26 +12,16 @@ startApp({
   mainNode: 'app-content',
 });
 
+
 @customElement('app-index')
-export class AppIndex extends LitElement {
+export class IndexPage extends LitElement {
   elementController = new ElementController(this);
   
-
   static styles = styles;
 
-  
-  render() {
+  render(){
     return html`
-    
-    <section role="main" tabindex="-1" class="">
-      <h3>Todo List</h3>
-      <slot></slot>
-      <article></article>
-      <aside>
-        <input placeholder="Enter your name">
-      </aside>
- 
-    </section>
+    <slot></slot>
     `;
   }
 }
