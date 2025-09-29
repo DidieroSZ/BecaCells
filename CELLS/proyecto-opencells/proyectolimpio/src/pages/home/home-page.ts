@@ -14,7 +14,7 @@ export class HomePage extends LitElement {
   } */
   static styles = css`
     .container--links{
-      width: 100%;
+      width: auto;
       max-width: 500px;
       overflow: hidden;
       border-radius: 1rem;

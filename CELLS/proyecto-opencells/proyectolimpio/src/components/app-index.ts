@@ -1,5 +1,6 @@
 import { startApp } from '@open-cells/core';
 import { LitElement, html } from 'lit';
+import { PageController } from '@open-cells/page-controller';
 import { customElement } from 'lit/decorators.js';
 import { ElementController } from '@open-cells/element-controller';
 import { routes } from '../router/routes.js';
@@ -15,6 +16,7 @@ startApp({
 
 @customElement('app-index')
 export class IndexPage extends LitElement {
+  pageController = new PageController(this);
   elementController = new ElementController(this);
   
   static styles = styles;
