@@ -18,9 +18,13 @@ startApp({
 export class AppIndex extends LitElement {
   elementController = new ElementController(this);
 
-  static styles = css`
+  // Hace uso de CSS Global
+  protected createRenderRoot(): HTMLElement | DocumentFragment {
+    // @ts-ignore
+    return this;
+  }
 
-  
+  static styles = css`  
   `;
 
   render() {

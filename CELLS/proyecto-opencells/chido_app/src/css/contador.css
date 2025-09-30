@@ -1,0 +1,9 @@
+contador-page{
+    padding: 1rem;
+    display: block;
+}
+.contador--container {
+    border: solid 2px var(--Blanco);
+    width: auto;
+    max-width: fit-content;
+}

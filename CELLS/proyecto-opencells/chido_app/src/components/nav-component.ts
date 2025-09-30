@@ -20,7 +20,7 @@ export class NavComponent extends LitElement {
       <div class="container-links d-flex rounded-3 p-3 gap-3">
         <button @click="${() => this.pageController.navigate('home')}" class="btn-general btn-pincipal rounded-pill p-3">Home Page</button>
         <button @click="${() => this.pageController.navigate('contador')}" class="btn-general btn-secundario rounded-pill p-3">Contador</button>
-        <button @click="${() => this.pageController.navigate('second')}" class="btn-general btn-secundario rounded-pill p-3">TodoList</button>
+        <button @click="${() => this.pageController.navigate('todo')}" class="btn-general btn-secundario rounded-pill p-3">TodoList</button>
       </div>
     `;
   }
