@@ -1,0 +1,66 @@
+@import url('./home.css');
+@import url('./second.css');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --Principal: #A1CCA5;
+  --Secundario: #A6A6A8;
+  --Terciario: #111D13;
+  --Blanco: #fff;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--Terciario) !important;
+  color: var(--Blanco) !important;
+}
+main{
+
+}
+.btn-general{
+  background-color: var(--Terciario);
+  color: var(--Blanco);
+  border: solid 2px var(--Terciario);
+  transition: ease-out 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-pincipal{
+  background-color: var(--Terciario);
+  color: var(--Blanco);
+}
+  .btn-pincipal:hover{
+    background-color: transparent;
+    color: var(--Terciario);
+  }
+.btn-secundario{
+  background-color: transparent;
+  color: var(--Terciario);
+  border: solid 2px var(--Terciario);
+}
+  .btn-secundario:hover{
+    background-color: var(--Terciario);
+    color: var(--Blanco);
+  }
+.btn-terciario{
+  background-color: transparent;
+  color: var(--Blanco);
+  border: solid 2px var(--Blanco);
+}
+  .btn-terciario:hover{
+    background-color: var(--Blanco);
+    color: var(--Terciario);
+  }
+.container-links{
+  width: 100%;
+  background-color: var(--Principal);
+  justify-content: start;
+  align-items: center;
+  flex-flow: row nowrap;
+}
