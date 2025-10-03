@@ -9,10 +9,6 @@ export class SecondPage extends LitElement {
   protected createRenderRoot(): HTMLElement | DocumentFragment {
     return this;
   }
-  /* protected createRenderRoot() {
-    return this;
-  } */
-
 
   static styles = css`
   `;
