@@ -1,0 +1,13 @@
+ENCABEZADOS
+# H1
+## H2
+## H3
+
+NEGRITA
+**texto en negrita**
+__texto en negrita__
+
+CURSIVA
+*texto en negrita*
+_texto en negrita_
+

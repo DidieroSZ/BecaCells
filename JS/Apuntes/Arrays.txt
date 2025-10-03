@@ -1,0 +1,13 @@
+// ARREGLOS
+
+
+// AGREGAR ELEMENTO
+arreglo.push(elemento); //Agrega al final del arreglo
+
+arreglo.unshift(elemento); //Agrega al inicio del arreglo
+
+// ELIMINAR ELEMENTO
+arreglo.pop(elemento); //Elimina ultimo elemento
+
+arreglo.splice(2, 1); // (Posicion, cuantos), eliminar de posicion especifica.
+
