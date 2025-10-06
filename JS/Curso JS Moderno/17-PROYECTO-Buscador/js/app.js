@@ -1,4 +1,4 @@
-//VARIABLES
+// ------------------ VARIABLES ------------------
 const resultado = document.querySelector('#resultado');
 
 const year = document.querySelector('#year');
@@ -18,8 +18,10 @@ const datosBusqueda = {
     transmision: '',
     color: ''
 }
+// ------------------ VARIABLES ------------------
 
-//EVENTOS
+
+// ------------------ EVENTOS ------------------
 document.addEventListener('DOMContentLoaded', () => {
     mostrarAuto(autos);
 
@@ -34,8 +36,10 @@ puertas.addEventListener('change', llenarObjeto);
 transmision.addEventListener('change', llenarObjeto);
 color.addEventListener('change', llenarObjeto);
 
-//FUNCIONES
+// ------------------ EVENTOS ------------------
 
+
+// ------------------ FUNCIONES ------------------
 function llenarObjeto(e){
     let valor = e.target.value;
     let id = e.target.id;
@@ -45,14 +49,23 @@ function llenarObjeto(e){
 }
 
 function mostrarAuto(arreglo){
-     limpiarHtml();
-    arreglo.forEach(auto => {
-        const {marca, modelo, year, puertas, transmision, precio, color } = auto;
+    limpiarHtml();
+    if (arreglo.length !== 0) {
+        arreglo.forEach(auto => {
+            const {marca, modelo, year, puertas, transmision, precio, color } = auto;
+            const html = document.createElement('P');
+            html.textContent = ` ${marca} ${modelo} ${year} ${puertas} ${transmision} ${precio} ${color}`
+            
+            resultado.appendChild(html);
+        });
+        console.log(arreglo);
+    }
+    else{
         const html = document.createElement('P');
-        html.textContent = ` ${marca} ${modelo} ${year} ${puertas} ${transmision} ${precio} ${color}`
-        
+        html.textContent = 'SIN RESULTADOS.'
         resultado.appendChild(html);
-    });
+    }
+    
 }
 
 function limpiarHtml(){
@@ -72,22 +85,69 @@ function llenarYears(){
     } 
 }
 
-function filtarAuto(){
-    const res = autos.filter(filtarMarca).filter(filtarYear);
-    /* console.log(res); */
-    mostrarAuto(res)
-}
+    /* FILTARADO */
+    function filtarAuto(){
+        const res = autos.filter(filtarMarca).filter(filtarYear).filter(filtarMinimo).filter(filtarMaximo)
+        .filter(filtarPuertas).filter(filtarTransmision).filter(filtarColor) ;
+        /* console.log(res); */
+        mostrarAuto(res)
+    }
 
-function filtarMarca(auto){
-    if (datosBusqueda.marca) {
-        return auto.marca === datosBusqueda.marca;
+    function filtarMarca(auto){
+        if (datosBusqueda.marca) {
+            return auto.marca === datosBusqueda.marca;
+        }
+        return auto
     }
-    return auto
-}
-function filtarYear(auto){
-    const { year } = datosBusqueda;
-    if ( parseInt(year) ) {
-        return auto.year === parseInt(year);
+    function filtarYear(auto){
+        const { year } = datosBusqueda;
+        if ( parseInt(year) ) {
+            return auto.year === parseInt(year);
+        }
+        return auto
     }
-    return auto
-}
+    function filtarYear(auto){
+        const { year } = datosBusqueda;
+        if ( parseInt(year) ) {
+            return auto.year === parseInt(year);
+        }
+        return auto
+    }
+    function filtarMinimo(auto){
+         const { minimo } = datosBusqueda;
+        if ( minimo ) {
+            return auto.precio >= minimo;
+        }
+        return auto
+    }
+    function filtarMaximo(auto){
+         const { maximo } = datosBusqueda;
+        if ( maximo ) {
+            return auto.precio <= maximo;
+        }
+        return auto
+    }
+    function filtarPuertas(auto){
+        const { puertas } = datosBusqueda;
+        if ( parseInt(puertas) ) {
+            return auto.puertas === parseInt(puertas);
+        }
+        return auto
+    }
+    function filtarTransmision(auto){
+        const { transmision } = datosBusqueda;
+        if ( transmision ) {
+            return auto.transmision === transmision;
+        }
+        return auto
+    }
+    function filtarColor(auto){
+        const { color } = datosBusqueda;
+        if ( color ) {
+            return auto.color === color;
+        }
+        return auto
+    }
+    /* FILTARADO */
+
+// ------------------ FUNCIONES ------------------
