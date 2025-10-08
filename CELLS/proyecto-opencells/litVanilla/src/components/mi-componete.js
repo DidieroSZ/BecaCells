@@ -4,7 +4,6 @@ export class miComponente extends LitElement {
     render(){
         return html`
         <p> Hola desde LitElement </p>
-        
         `;
     }
 }

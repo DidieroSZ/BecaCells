@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "lit-element": "^4.2.1",
     "smart-webcomponents": "^24.0.22"
   },
