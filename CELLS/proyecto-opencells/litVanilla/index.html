@@ -5,42 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script type="module" src="./src/mi-componete.js" ></script>
-    <script type="module" src="node_modules/smart-webcomponents/source/modules/smart.table.js"></script>
-    
-    <link rel="stylesheet" type="text/css" href="node_modules/smart-webcomponents/source/styles/smart.default.css" />
+    <!-- ------ LOCAL COMPONENTS------ -->
+        <script type="module" src="./src/components/add-item.js" ></script>
+        <script type="module" src="./src/components/mi-componete.js" ></script>
+        <link rel="stylesheet" href="./src/css/genera.css">
+    <!-- ------ END LOCAL COMPONENTS ------ -->
+
+
+    <!-- ------ EXPORTS COMPONENTS ------ -->
+        <script type="module" src="node_modules/smart-webcomponents/source/modules/smart.table.js"></script>
+        <script type="module" src="node_modules/smart-webcomponents/source/modules/smart.tabs.js"></script>
+    <!-- ------ END EXPORTS COMPONENTS ------ -->
+
+
+    <!-- ------ EXPORTS STYLES ------ -->
+        <link rel="stylesheet" type="text/css" href="node_modules/smart-webcomponents/source/styles/smart.default.css" />
+    <!-- ------ ENDEXPORTS STYLES ------ -->
 </head>
 <body>
-    <div class="button-demo hover-glow-effect">    
-        <div class="demo-buttons-group">
-            <smart-button class="glow-on-hover">Hover me, then click me!</smart-button>
-            <smart-table column-menu filtering sortable virtualization id="table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Country</th>
-                            <th scope="col">Area</th>
-                            <th scope="col">Population_Rural</th>
-                            <th scope="col">Population_Total</th>
-                            <th scope="col">GDP_Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Brazil</td>
-                            <td>8515767</td>
-                            <td>0.15</td>
-                            <td>205809000</td>
-                            <td>2353025</td>
-                        </tr>
-                
-                    </tbody>
-                </table>
-            </smart-table>
-        </div>
-    </div>
+    <smart-tabs id="tabs3" class="animation mobile">
+        <smart-tab-item label="Home">
+            dw
+        </smart-tab-item>
+        <smart-tab-item label="Listados">
+            <listado></listado>
+        </smart-tab-item>
+        <smart-tab-item label="Add">
+            <add-item></add-item>
+        </smart-tab-item>
+    </smart-tabs>
     <br>
-    <p>INDEX</p>
+
     <mi-componente></mi-componente>
 </body>
 </html>
