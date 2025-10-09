@@ -11,3 +11,16 @@ CURSIVA
 *texto en negrita*
 _texto en negrita_
 
+
+
+-----------------------------------------
+npm init -y
+npm i lit-element
+npm i --save-dev @web/dev-server
+
+Start:
+"start": "web-dev-server --node-resolve --open --watch"
+
+------------------------------------------
+
+Usar un WEBComponent:

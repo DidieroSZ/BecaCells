@@ -1,0 +1,20 @@
+{
+  "name": "litvanilla2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit": "^3.3.1",
+    "smart-webcomponents": "^24.0.22"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  }
+}

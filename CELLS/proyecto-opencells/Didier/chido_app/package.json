@@ -15,7 +15,8 @@
     "@open-cells/element-controller": "^1.0.2",
     "@open-cells/page-controller": "^1.0.2",
     "bootstrap": "^5.3.8",
-    "lit": "^3.0.0"
+    "lit": "^3.0.0",
+    "smart-webcomponents": "^24.0.22"
   },
   "devDependencies": {
     "typescript": "^5.4.5",
