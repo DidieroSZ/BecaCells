@@ -21,9 +21,13 @@ export class TextComponent extends LitElement {
 
     render() {
         return html`
-        <div class="mt-3 p-3 rounded-3 border border-secundary">
-            <h3 class="m-0" style="color: ${this.oF.colorText} !important">${ this.resultado }</h3>
-        </div>
+          <div class="mt-3 p-3 rounded-3 border border-secundary">
+            <p
+                class="m-0 ${this.oF.fontText} ${this.oF.alignText} ${this.oF.boldText ? 'fw-bold' : ''}"
+                style="color: ${this.oF.colorText}; font-size: ${this.oF.sizeText}px;">
+                 ${this.resultado}
+            </p>
+          </div>
         `;
     }
 }

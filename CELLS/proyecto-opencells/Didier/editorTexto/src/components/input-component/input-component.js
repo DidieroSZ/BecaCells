@@ -16,10 +16,16 @@ export class InputComponent extends LitElement {
    
     render() {
         return html`
-            <div class="mt-3">
-                <label class="form-label">Modificar texto:</label>
-                <input type="text" @input=${this._obterTexto} class="form-control" value="" id="inputText"/>
-            </div>
+          <div class="mt-3">
+            <label class="form-label">Modificar texto:</label>
+            <input
+              type="text"
+              @input=${this._obterTexto}
+              class="form-control"
+              id="inputText"
+              value="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quidem minus ut iure culpa asperiores molestiae illo temporibus rerum ducimus at, obcaecati, incidunt, sequi quo suscipit ratione officiis odio quasi."
+            />
+          </div>
         `;
     }
 

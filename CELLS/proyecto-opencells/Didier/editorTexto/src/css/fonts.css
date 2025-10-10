@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
 .bbh-sans-bartle-regular {
   font-family: "BBH Sans Bartle", sans-serif;
@@ -28,6 +32,29 @@
 
 .barrio-regular {
   font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.creepster-regular {
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nosifer-regular {
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fascinate-regular {
+  font-family: "Fascinate", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", cursive;
   font-weight: 400;
   font-style: normal;
 }

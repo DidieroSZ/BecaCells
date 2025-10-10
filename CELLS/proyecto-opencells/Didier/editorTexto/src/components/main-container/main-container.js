@@ -25,7 +25,7 @@ export class MainContainer extends LitElement {
 
     constructor(){
         super();
-        this.texto = '';
+        this.texto = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quidem minus ut iure culpa asperiores molestiae illo temporibus rerum ducimus at, obcaecati, incidunt, sequi quo suscipit ratione officiis odio quasi.';
 
         this.objetoFormato = {};
     }
@@ -42,9 +42,8 @@ export class MainContainer extends LitElement {
         `;
     }
 
-     _actualizarTexto(e){
+    _actualizarTexto(e){
         this.texto = e.detail.texto;
-        /* console.log('Actualizando: ',this.texto); */
     }
 
     _formatoTexto(e){
