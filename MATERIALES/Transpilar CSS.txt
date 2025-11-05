@@ -1,0 +1,13 @@
+Transpilar CSS
+fundation sass
+slots con css
+
+Proyecto:
+
+- Buscar por Pokémon.
+- paginación de 10 en 10 
+
+Modificar Pokedex para solo hacer consumo de API y búsqueda de pokemones
+
+Modificar CSS estético.
+
